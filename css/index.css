@@ -10,19 +10,12 @@ body {
 #header {
   padding: 0 40px;
   background-color: transparent;
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  background: #00000065;
+  background: #00000091;
   z-index: 1;
-}
-@media (max-width:767) {
-    #header{
-        background: #000000a4;
-    }
 }
 #header nav .navbar-brand img {
   width: 40px;
+  border-radius: 50%;
 }
 #header .container-fluid .collapse .navbar-nav {
   display: flex;
@@ -35,19 +28,25 @@ body {
   margin: 0 10px;
   position: relative;
 }
+.item{
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: all 0.4s ease-out;
+}
+.item:hover{
+    color: rgba(245, 245, 245, 0.712);
+    transform: scale(1.03);
+}
 .item::after {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: red;
+  background-color:#0d6efd;
   bottom: -3px;
   left: 0;
-  transition: ease 0.4s;
-  -webkit-transition: ease 0.4s;
-  -moz-transition: ease 0.4s;
-  -ms-transition: ease 0.4s;
-  -o-transition: ease 0.4s;
+ transition: all 0.4s ease-out;
 }
 .item:hover::after {
   width: 100%;
@@ -60,6 +59,72 @@ body {
     background-position: center top;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
+    z-index: 0;
+    
+}
+#home .container{
+    transform: translate(20vw,15vh);
+    background: #00000060;
+    width: 61vw;
+    padding: 20px 30px;
+    color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+}
+#home .container .title{
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+    
+}
+#home .container .text{
+    text-transform: capitalize;
+}
+
+#home .btn, #header .btn,#login .btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    transition: all 0.7s ease-out;
+}
+#home .btn:hover, #header .btn:hover,#login .btn:hover{
+    transform: scale(1.12);
+    letter-spacing: 0.1rem;
+}
+/* footer */
+#footer{
+    position: fixed;
+    bottom: 0;
+    background: #00000060;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* login section */
+#login{
+    position: relative;
+    left: 25%;
+    top: 10rem;
+    background: transparent;
+    width: 50%;
+    background: #00000060;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5rem 10px 10px 10px;
     z-index: 0;
 }
+#login img{
+    width: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 13.5rem;
+    right: 42%;
+    z-index: 0;
+}
+
