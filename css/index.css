@@ -10,7 +10,7 @@ body {
 #header {
   padding: 0 40px;
   background-color: transparent;
-  background: #00000091;
+  background: #000000a8;
   z-index: 1;
 }
 #header nav .navbar-brand img {
@@ -51,7 +51,9 @@ body {
 .item:hover::after {
   width: 100%;
 }
-
+#header nav .nav-link.active{
+  color: rgb(189, 189, 189);
+}
 /* home section */
 #home{
     background-image: url('/photos/ntic.png');
@@ -61,11 +63,11 @@ body {
     width: 100vw;
     height: 90vh;
     z-index: 0;
-    
+   
 }
 #home .container{
     transform: translate(20vw,15vh);
-    background: #00000060;
+    background: #000000a8;
     width: 61vw;
     padding: 20px 30px;
     color: whitesmoke;
@@ -73,10 +75,10 @@ body {
     text-align: center;
 }
 #home .container .title{
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 4rem;
+    line-height: 3rem;
     letter-spacing: 0.2rem;
     
 }
@@ -99,7 +101,7 @@ body {
 #footer{
     position: fixed;
     bottom: 0;
-    background: #00000060;
+    background: #000000a8;
     color: whitesmoke;
     text-align: center;
     width: 100%;
@@ -113,7 +115,7 @@ body {
     top: 10rem;
     background: transparent;
     width: 50%;
-    background: #00000060;
+    background: #000000a8;
     text-align: center;
     border-radius: 10px;
     padding: 5rem 10px 10px 10px;
