@@ -1,0 +1,46 @@
+body{
+    background: rgb(64, 172, 245);
+}
+#tabs .nav-tabs .nav-link{
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#tabs .nav-link.active{
+    color: black;
+}
+#timeTables .timeT{
+    padding: 10px;
+}
+
+#timeTables .timeT th{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: whitesmoke;
+    background: rgba(3, 29, 102, 0.692);
+    border-right:solid 1px white ;
+    text-transform: uppercase;
+}
+#timeTables .timeT thead th:first-child{
+    width: 6rem;
+}
+#timeTables .timeT thead th:last-child{
+    border-right: none;
+}
+#timeTables .timeT td{
+    color: whitesmoke;
+    background: rgba(27, 55, 134, 0.692);
+    border-right:solid 1px white ;
+    text-transform: capitalize;
+}
+#timeTables .title{
+    text-align: center;
+    padding: 0 10px;
+    font-size: 2.6rem;
+    color: whitesmoke;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    
+}
